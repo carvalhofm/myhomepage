@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nanum+Myeongjo:wght@800&display=swap');
+
+/* STARS ACTION*/
+
+@keyframes stars {
+    0% {
+        opacity: 0;
+        
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+    100% {
+        opacity: 0.02;
+        transform: rotate(360deg);
+    }
+}
+
+.star-1 {
+    animation: stars 8s 5.5s linear infinite;
+    opacity: 0;
+    position: absolute;
+    left: 65%;
+    top: 25%;
+    width: 1.5em
+}
+.star-2 {
+    animation: stars 8s 7.5s linear infinite;
+    opacity: 0;
+    position: absolute;
+    left: 25%;
+    bottom: 32%;
+    width: 1.5em
+}
+
+/* BOTTOM-TOP action */
+
+@keyframes but-up {
+    0% {
+  
+        transform: translate3d(0,1em,0);
+        opacity: 0;
+    }
+
+    100% {
+
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+
+#header {
+   
+    animation: but-up 1s 1.25s forwards;
+    backface-visibility: hidden;
+    cursor: default;
+    display: inline-block;
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    top: 2em;
+    vertical-align: middle;
+    color: #fefefe;
+    text-align: center;
+    width: 100%;
+
+}
+
+#header h1 {
+font-family: 'Great Vibes', cursive;
+font-size: 4.35em;
+font-weight: 900;
+letter-spacing: -0.05em;
+line-height: 1em;
+text-shadow: 10px 10px 15px #fcf8f8;
+}
+
+#header p {
+font-size: 1.25em;
+
+opacity: 0.75;
+}
+
+#header nav {
+margin: 1.5em 0 0 0;
+}
+
+#header nav li {
+
+animation: but-up 0.5s ease-in-out forwards;
+backface-visibility: hidden;
+display: inline-block;
+height: 5.35em;
+line-height: 5.885em;
+opacity: 0;
+position: relative;
+top: 0;
+width: 7.35em;
+}
+
+#header nav li:nth-child(1) {
+    animation-delay: 2.5s;
+}
+
+#header nav li:nth-child(2) {
+    animation-delay: 2.75s;
+    
+}
+
+#header nav li:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.icon{
+    text-decoration: none;
+    transition: 800ms;
+    height: 3em;
+}
+.icon:hover {
+    transform: rotate(720deg);
+    
+}
+#bg {
+
+    background: #348cb2; 
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+
+
+#footer{
+    text-align: center;
+    color: #fefefe;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+}
+#footer a{
+    text-decoration: none;
+    color: #fefefe;    
+}
